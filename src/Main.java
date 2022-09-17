@@ -1,12 +1,12 @@
 public class Main {
-    public static void main (String [] args) {
-        double weight = 75;
+    public static void main(String[] args) {
+        double weight = 90;
         double height = 160;
-        BmiService x = new BmiService();
-        double yourBmi = x.calculate(weight, height);
+        BmiService bmi = new BmiService();
+        double yourBmi = bmi.calculate(weight, height);
 
-        BmiDescription y = new BmiDescription();
-        String title = y.descr(yourBmi);
+        BmiDescription description = new BmiDescription();
+        String title = description.descr(yourBmi);
 
         System.out.println("У Вас " + title + ". Ваш ИМТ " + yourBmi);
     }

@@ -1,24 +1,19 @@
 public class BmiDescription {
-    public static String descr (double a) {
+    public static String descr(double val1) {
         String result;
-        if (a > 0 && a < 16) {
+        if (val1 > 0 && val1 < 16) {
             result = "выраженный дефицит второй степени";
-        }
-        else if (a >= 16 && a <= 18.5) {
+        } else if (val1 >= 16 && val1 <= 18.5) {
             result = "недостаточная масса тела (дефицит)";
-        }
-        else if (a > 18.5 && a <= 25) {
+        } else if (val1 > 18.5 && val1 <= 25) {
             result = "нормальная масса тела";
-        }
-        else if (a > 25 && a <= 30) {
-             result = "избыточная масса тела";
-         }
-        else if (a > 30) {
+        } else if (val1 > 25 && val1 <= 30) {
+            result = "избыточная масса тела";
+        } else if (val1 > 30) {
             result = "ожирение";
+        } else {
+            result = "неверно введены значения";
         }
-        else {
-             result = "неверно введены значения";
-        }
-         return result;
+        return result;
     }
 }
